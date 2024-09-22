@@ -1,0 +1,4 @@
+node_modules
+
+/FrontEnd/build
+/FrontEnd/node_modules
