@@ -106,7 +106,7 @@ useEffect(() => {
     <nav className="py-2 position-fixed top-0 pr-4 start-0 w-100 shadow-sm">
   <div className="container d-flex justify-content-between align-items-center w-100 bg-white">
     <a style={{ textDecoration: "none", color: "black" }}>
-      <h1 onClick={()=>{nav('/')}}  className="logo fs-3 fw-bold">Connectify</h1>
+      <h1 onClick={()=>{nav('/')}}  className="logo fs-3 fw-bold">SocialIn</h1>
     </a>
     <div className="mr-5 position-relative d-flex">
       <Stack sx={{ width: 100}}> 

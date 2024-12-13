@@ -1,32 +1,31 @@
-import {toast} from 'react-toastify';
+import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { useEffect } from 'react';
 import { useNavigate } from 'react-router';
-import sideIMG  from '../images/welcome.png'
+import sideIMG from '../images/welcome.png'
 
-const Home = ({history}) => {
+const Home = ({ history }) => {
 
-const nav = useNavigate();
- useEffect(()=>{
-    if(localStorage.getItem("userInfo1"))
-    {
-         nav('/s')
+  const nav = useNavigate();
+  useEffect(() => {
+    if (localStorage.getItem("userInfo1")) {
+      nav('/s')
     }
-  },[history])
+  }, [history])
 
   return (
     <div>
-    <div class="jumbotron centered align-items-center">
-    <div class="container  ">
-    <h1 class="display-3 mt-3 mb-3">Connectify</h1>
-    <a class="btn btn-light btn-lg mr-2" href="/register" role="button">Register</a>
-    <a class="btn btn-dark btn-lg" href="/login" role="button">Login</a>
-  </div>
-  <div>
-     <img src={sideIMG} alt="" />
-  </div>
-  </div>
-</div>
+      <div class="jumbotron centered align-items-center">
+        <div class="container">
+          <h1 class="display-3 mt-3 mb-3">SocialIn</h1>
+          <a class="btn btn-light btn-lg mr-2" href="/register" role="button">Register</a>
+          <a class="btn btn-dark btn-lg" href="/login" role="button">Login</a>
+        </div>
+        <div>
+          <img src={sideIMG} alt="" />
+        </div>
+      </div>
+    </div>
   )
 }
 export default Home;
